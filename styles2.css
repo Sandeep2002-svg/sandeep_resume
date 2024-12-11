@@ -1,0 +1,126 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    page-break-after: avoid;
+    border-radius: 8px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-pic {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    border: 2px solid #ddd;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.name {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    padding: 5px 10px;
+    animation: slideInName 2s ease-in-out;
+    transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.name:hover {
+    color: #0073e6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    border-bottom: 2px solid #0073e6;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    animation: slideIn 1s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: #ff6347;
+    transform: scale(1.1);
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #0073e6;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+h3:hover {
+    color: #ff6347;
+    transform: translateX(10px);
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from { transform: translateX(-100%);opacity: 0;}
+    to {transform: translateX(0);opacity: 1;}
+}
+
+@keyframes slideInName {
+    from {transform: translateX(-50%);opacity: 0;}
+    to {transform:translateX(0); opacity: 1; }
+}
